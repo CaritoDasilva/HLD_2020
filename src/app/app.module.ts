@@ -27,6 +27,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
@@ -37,7 +39,8 @@ import { CommunityComponent } from './pages/community/community.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { EventDetailComponent } from './pages/event-detail/event-detail.component';
-import { ActivityDetailComponent } from './pages/activity-detail/activity-detail.component'
+import { ActivityDetailComponent } from './pages/activity-detail/activity-detail.component';
+import { DialogComponent } from './component/dialog/dialog.component'
 
 @NgModule({
   declarations: [
@@ -53,7 +56,8 @@ import { ActivityDetailComponent } from './pages/activity-detail/activity-detail
     ProfileComponent,
     NavbarComponent,
     EventDetailComponent,
-    ActivityDetailComponent
+    ActivityDetailComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,9 @@ import { ActivityDetailComponent } from './pages/activity-detail/activity-detail
     BrowserAnimationsModule,
     MatSliderModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
