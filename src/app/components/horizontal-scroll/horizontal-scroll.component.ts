@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HorizontalScrollComponent implements OnInit {
   @Input() 'list': Array<any>
+  @Input() 'cardSize': string
   constructor() { }
 
   ngOnInit(): void {

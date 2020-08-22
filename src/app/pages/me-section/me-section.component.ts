@@ -7,14 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeSectionComponent implements OnInit {
   exampleList = [
-    { 'id': 0, 'title': 'Test1', 'date': '12-02', 'time': '1:02' },
-    { 'id': 0, 'title': 'Test1', 'date': '12-02', 'time': '1:02' },
-    { 'id': 0, 'title': 'Test1', 'date': '12-02', 'time': '1:02' },
-    { 'id': 0, 'title': 'Test1', 'date': '12-02', 'time': '1:02' },
-    { 'id': 0, 'title': 'Test1', 'date': '12-02', 'time': '1:02' },
-    { 'id': 0, 'title': 'Test1', 'date': '12-02', 'time': '1:02' },
-    { 'id': 0, 'title': 'Test1', 'date': '12-02', 'time': '1:02' },
-    { 'id': 0, 'title': 'Test1', 'date': '12-02', 'time': '1:02' },
+    {
+      'id': 1,
+      'title': 'Meditación',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/meditacion.png',
+      'duration': '5 min'
+    },
+    {
+      'id': 2,
+      'title': 'Ejercicio de respiración',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/respiracion.png',
+      'duration': '5 min'
+    },
+    {
+      'id': 3,
+      'title': 'Tips de planificación',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/planificacion.png' ,
+      'duration': '8 min'
+    },
+    {
+      'id': 4,
+      'title': 'Actividad ejemplo',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/meditacion.png',
+      'duration': '5 min'
+    }
   ]
   constructor() { }
 

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,11 @@ import { environment } from 'src/environments/environment';
 import { HomeComponent } from './pages/home/home.component';
 import { HorizontalScrollComponent } from './components/horizontal-scroll/horizontal-scroll.component';
 import { MeSectionComponent } from './pages/me-section/me-section.component';
+
+// iconos
+import {
+  faClock
+} from '@fortawesome/free-regular-svg-icons'
 
 @NgModule({
   declarations: [
@@ -31,9 +37,14 @@ import { MeSectionComponent } from './pages/me-section/me-section.component';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary){
+    library.addIcons(faClock)
+  }
+}
