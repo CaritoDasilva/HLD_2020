@@ -1,0 +1,114 @@
+import { Injectable } from '@angular/core';
+import { AngularFireAuth } from "@angular/fire/auth";
+import { auth } from 'firebase/app';
+import 'firebase/auth';
+import { UsersService } from './users.service';
+import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
+import { User } from '../models/user.model';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthService {
+  isLogged: boolean;
+  isLoggedObservable: BehaviorSubject<boolean>;
+  constructor(public afAuth: AngularFireAuth, private userService: UsersService, private router: Router, private http: HttpClient) {
+    this.isLogged = localStorage.getItem('user') ? true : false;
+    this.isLoggedObservable = new BehaviorSubject<boolean>(this.isLogged)
+  }
+
+  getIsLogged() {
+    return this.isLoggedObservable.asObservable();
+  }
+
+  setIsLogged(test: boolean) {
+    this.isLogged = test;
+    this.isLoggedObservable.next(this.isLogged);
+  }
+
+  googleAuth() {
+    return this.authLogin(new auth.GoogleAuthProvider());
+  }
+
+  createAccountWithEmailAndPassword(email: string, password: string, displayName: string, age: string, qtyKids: string, ageKids: string) {
+    this.afAuth.createUserWithEmailAndPassword(email, password).then(result => {
+      if (result) {
+        this.updateAccountInfo(displayName);
+        this.userService.getUser(result.user.uid).subscribe(data => {
+          data.length === 0 ? this.userService.createUser(result.user.displayName, result.user.email,
+            result.user.phoneNumber, result.user.photoURL, result.user.providerId,
+            result.user.uid) : data.forEach(user => user.payload.doc.data())
+        });
+      }
+    })
+  }
+
+  updateAccountInfo(displayName: string) {
+    this.afAuth.onAuthStateChanged((user) => {
+      user.updateProfile({
+        displayName: displayName
+      }).then(() => {
+        let displayName = user.displayName
+      }), (error) => console.log(error)
+    })
+  }
+
+  signInWithMailAndPassword(email: string, password: string) {
+    return this.afAuth.signInWithEmailAndPassword(email, password).then(result => {
+      if (result) {
+        this.setIsLogged(true);
+        localStorage.setItem('user', JSON.stringify({
+          user: {
+            name: result.user.displayName,
+            email: result.user.email,
+            phone: result.user.phoneNumber,
+            picture: result.user.photoURL
+          }
+        }))
+        let user = JSON.parse(localStorage.getItem('user')).user;
+        this.userService.setCurrentUser(user);
+        this.router.navigate(['home'])
+      }
+    }).catch(error => console.log(error));
+  }
+
+  authLogin(provider) {
+    this.afAuth.signInWithPopup(provider).then(result => {
+      this.userService.getUser(result.user.uid).subscribe(data => {
+        data.length === 0 ? this.userService.createUser(result.user.displayName, result.user.email,
+          result.user.phoneNumber, result.user.photoURL, result.user.providerId,
+          result.user.uid) : data.forEach(user => user.payload.doc.data())
+      });
+      if (!this.isLogged) {
+        this.setIsLogged(true);
+
+        localStorage.setItem('user', JSON.stringify({
+          user: {
+            name: result.user.displayName,
+            email: result.user.email,
+            phone: result.user.phoneNumber,
+            picture: result.user.photoURL
+          }
+        }))
+        let user = JSON.parse(localStorage.getItem('user')).user;
+        this.userService.setCurrentUser(user);
+        this.router.navigate(['home'])
+      }
+    }).catch(error => {
+      console.log(error);
+    })
+  }
+
+  signOut() {
+    return this.afAuth.signOut().then(() => {
+      localStorage.removeItem('user');
+      this.setIsLogged(false);
+      this.userService.getUser(null);
+      this.router.navigate(['login']);
+    })
+  }
+
+
+}

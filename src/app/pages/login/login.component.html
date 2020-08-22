@@ -4,20 +4,20 @@
         <button type="button" class="btn register-btn">Registrarse</button>
     </div>
     <div class="row justify-content-md-center form-container">
-        <form>
+        <form [formGroup]="loginForm" (ngSubmit)="signInWithMail()">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
                 <input type="text" class="form-control email" placeholder="Ingresa tu correo" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
+                    aria-describedby="basic-addon1" formControlName="email" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
                 <input type="text" class="form-control email" placeholder="Ingresa tu clave" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
+                    aria-describedby="basic-addon1" formControlName="password" required>
             </div>
             <div class="next-login-btn-container">
                 <button type="submit" class="btn next-login-btn">Siguiente</button>

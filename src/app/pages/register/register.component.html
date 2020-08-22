@@ -3,48 +3,48 @@
         <h4>Registro</h4>
     </div>
     <div class="row justify-content-md-center form-container">
-        <form>
+        <form [formGroup]="registerForm" (ngSubmit)="registerWithMail()">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
                 <input type="text" class="form-control email" placeholder="Ingresa tu nombre" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
+                    aria-describedby="basic-addon1" formControlName="name" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
                 <input type="text" class="form-control email" placeholder="Ingresa tu correo" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
+                    aria-describedby="basic-addon1" formControlName="email" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
                 <input type="password" class="form-control email" placeholder="Ingresa tu clave" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
+                    aria-describedby="basic-addon1" formControlName="password" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
                 <input type="text" class="form-control email" placeholder="Ingresa tu edad" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
+                    aria-describedby="basic-addon1" formControlName="age" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
                 <input type="text" class="form-control email" placeholder="Ingresa tu N° de hijes" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
+                    aria-describedby="basic-addon1" formControlName="qtyKids" required>
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
                 <input type="text" class="form-control email" placeholder="Ingresa la edad de tus hijes"
-                    aria-label="Username" aria-describedby="basic-addon1" required>
+                    aria-label="Username" aria-describedby="basic-addon1" formControlName="ageKids" required>
             </div>
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
