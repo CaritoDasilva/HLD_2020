@@ -12,6 +12,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './pages/home/home.component';
+import { HorizontalScrollComponent } from './components/horizontal-scroll/horizontal-scroll.component';
+import { MeSectionComponent } from './pages/me-section/me-section.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HomeComponent } from './pages/home/home.component';
     OnboardComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    HorizontalScrollComponent,
+    MeSectionComponent
   ],
   imports: [
     BrowserModule,
