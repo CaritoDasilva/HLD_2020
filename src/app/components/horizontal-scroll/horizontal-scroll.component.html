@@ -1,0 +1,21 @@
+
+<div class="scrolling-wrapper">
+    <!-- cards dinamicas -->
+    <div class="card" *ngFor="let item of list" [style.backgroundImage]="item.img" [ngClass]="cardSize">
+      <div class="container">
+
+          <h2 class="title">
+            {{ item.title }}
+          </h2>
+
+        <h2 class="duration">
+          <fa-icon [icon]="['far', 'clock']"></fa-icon>
+          {{ item.duration }}
+        </h2>
+        <h2 class="date">{{ item.date }}</h2>
+        <h2 class="time">{{ item.time }}</h2>
+      </div>
+    </div>
+
+
+</div>
