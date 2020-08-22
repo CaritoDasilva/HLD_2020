@@ -25,6 +25,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 //Angular Material
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+
 
 import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 import {
@@ -58,19 +61,15 @@ import { NavbarComponent } from './component/navbar/navbar.component'
     FontAwesomeModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 
 })
 export class AppModule {
-<<<<<<< HEAD
   constructor(library: FaIconLibrary) {
-    library.addIcons(faClock)
-=======
-  constructor(library: FaIconLibrary){
     library.addIcons(faClock, faEllipsisV)
->>>>>>> a077c85550084fc1139b85317590d8bcf94e0d23
   }
 }

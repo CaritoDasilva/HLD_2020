@@ -67,3 +67,11 @@
   @include  btn-primary-custom;
   @include big-btn;
 }
+
+.group-password {
+  display: flex;
+  flex-direction: column;
+  .form-control.group-password-input {
+    width: 100%!important;
+  }
+}
