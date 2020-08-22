@@ -1,0 +1,30 @@
+
+$main-light-blue: #7BDFF2;
+$main-red: #FF7A73;
+$main-pink: #FFD7D4;
+$soft-gray: #333333;
+@mixin big-btn{
+  width: 80%;
+  border-radius: 25px !important;
+}
+@mixin btn-primary-custom{
+  background-color: $main-light-blue;
+  color: white;
+  border: none;
+}
+@mixin btn-secondary-custom{
+  background-color:white ;
+  color: $main-pink;
+  border: 1px solid $main-red;
+}
+
+@mixin logo-small {
+  width: 100px;
+  height: 30px;
+}
+
+@mixin big-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: $main-light-blue;
+}

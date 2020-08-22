@@ -1,3 +1,5 @@
+@import '../../../sass/common';
+
 .carrusel-container{
   display: flex;
   align-content: center;
@@ -7,7 +9,10 @@
 
 .img-carousel{
   display: block;
-  width: 50vh;
+  width: 35vh;
+  margin: auto;
+  margin-bottom: 10%;
+  min-height: 36vh;
 }
 
 ol.carousel-indicators {
@@ -18,15 +23,41 @@ ol.carousel-indicators li{
   border-radius: 100%;
   width: 15px;
   height: 15px;
-  background-color: #7BDFF2;
+  background-color: $main-light-blue;
 }
 .carousel-text-wraper{
   padding: 15px;
   text-align: center;
 }
 .btn-main{
-  background-color: #7BDFF2 !important;
-  border: none;
-  width: 70%;
-  border-radius: 25px !important;
+  @include  btn-primary-custom;
+  @include big-btn;
+}
+.btn-second{
+  @include  btn-secondary-custom;
+  @include big-btn;
+}
+
+#splashContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.img-logo{
+  width: 80%;
+}
+
+.hidden{
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
