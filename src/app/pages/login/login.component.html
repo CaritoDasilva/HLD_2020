@@ -11,10 +11,15 @@
         <input type="text" class="form-control email" placeholder="tunombre@correo.com" aria-label="Username"
           aria-describedby="basic-addon1" formControlName="email" required>
       </div>
-      <div class="input-group mb-3">
+      <div class="input-group mb-3 group-password">
         <label>Contraseña</label>
-        <input type="text" class="form-control email" placeholder="******" aria-label="Username"
-          aria-describedby="basic-addon1" formControlName="password" required>
+        <input type="text" class="form-control group-password-input" pattern=".{6,}" title="Mínimo 6 caracteres"
+          placeholder="******" aria-label="Username" aria-describedby="basic-addon1" formControlName="password"
+          required>
+        <div>
+          <small id="emailHelp" class="form-text text-muted">Contraseña debe tener mínimo 6 carácteres</small>
+        </div>
+
       </div>
       <div class="form-group d-flex justify-content-start mt-4">
         <input type="checkbox" class="check" id="exampleCheck1">

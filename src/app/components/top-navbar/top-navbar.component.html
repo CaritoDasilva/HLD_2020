@@ -6,6 +6,13 @@
     <img class="logo" src="../../../assets/topnavbar/logo.png">
   </div>
   <div class="menu-wrapper">
-    <fa-icon [icon]="['fas', 'ellipsis-v']"></fa-icon>
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-points"
+      aria-label="Example icon button with a vertical three dot icon">
+      <fa-icon [icon]="['fas', 'ellipsis-v']"></fa-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)=signOut()>Cerrar sesión</button>
+    </mat-menu>
+
   </div>
 </div>
