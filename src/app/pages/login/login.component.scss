@@ -1,0 +1,35 @@
+.container {
+    padding: 5%;
+    .btn {
+        border-radius: 18px;
+        margin: 1%;
+        width: 145px;
+    }
+    .login-btn {
+        background-color: #F7D6E0;
+        
+    }
+    .register-btn {
+        border: 1px solid #F2B5D4;
+    }
+
+    .form-container {
+        margin-top: 10%;
+        span {
+            border-radius: 18px 0 0 18px;
+            background-color: #ffffff;
+        }
+        input {
+            border-radius: 18px;
+            width: 290px;
+            &.email {
+                border-radius: 0 18px 18px 0;
+                border-left: none;
+                width: 200px;
+            }
+        }
+        input:placeholder-shown { 
+            background-color: #ffffff;
+        }
+    }
+}
