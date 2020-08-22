@@ -19,7 +19,12 @@ import { MeSectionComponent } from './pages/me-section/me-section.component';
 // iconos
 import {
   faClock
-} from '@fortawesome/free-regular-svg-icons'
+} from '@fortawesome/free-regular-svg-icons';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+//Angular Material
+import { MatSliderModule } from '@angular/material/slider';
+
 
 @NgModule({
   declarations: [
@@ -38,13 +43,16 @@ import {
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule {
-  constructor(library: FaIconLibrary){
+  constructor(library: FaIconLibrary) {
     library.addIcons(faClock)
   }
 }

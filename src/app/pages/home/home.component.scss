@@ -1,3 +1,8 @@
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: skyblue!important;  /*replace with your color*/
+}
+
+
 .container {
     .btn {
         border-radius: 18px;
@@ -13,6 +18,9 @@
             color: #7BDFF2;
         }
         
+    }
+    .tags-container {
+        padding-left: 3%;
     }
     .btn-tags {
         border: 1px solid #FF81AE;
