@@ -1,0 +1,20 @@
+.container {
+    .btn {
+        border-radius: 18px;
+        margin: 1%;
+        width: 145px;
+    }
+    .btns-container {
+        .btn-next {
+            color: #ffffff;
+            background-color: #7BDFF2;
+        }
+        .btn-skip {
+            color: #7BDFF2;
+        }
+        
+    }
+    .btn-tags {
+        border: 1px solid #FF81AE;
+    }
+}
