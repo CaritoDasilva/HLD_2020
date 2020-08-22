@@ -3,7 +3,7 @@
     <!-- cards dinamicas -->
     <div class="card" *ngFor="let item of list" [ngClass]="cardSize">
       <div class="card-inner-wrapper card-body" [ngStyle]="{background: 'url('+item.img+')'}">
-          <div class="d-block">
+          <!-- <div class="d-block">
             <h2 class="title card-title">
                 {{ item.title }}
               </h2>
@@ -14,7 +14,7 @@
               <h2 class="date">{{ item.date }}</h2>
               <h2 class="time">{{ item.time }}</h2>
           </div>
-      </div>
+      </div> -->
     </div>
 
 

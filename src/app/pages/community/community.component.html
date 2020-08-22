@@ -1,1 +1,9 @@
-<p>community works!</p>
+<div class="container-fluid">
+  <app-top-navbar></app-top-navbar>
+  <h4 class="me-title">Ahora mismo</h4>
+  <img class="img_vivo" src="../../../assets/communitySection/evento_vivo.png">
+  <h4 class="me-title">Mañana</h4>
+  <app-horizontal-scroll class="mb-3" [list]="communityRecomendationList" [cardSize]="'largeCard'"></app-horizontal-scroll>
+  <h4 class="me-title">Próxima semana</h4>
+  <app-horizontal-scroll class="mb-3" [list]="tipsList" [cardSize]="'largeCard'"></app-horizontal-scroll>
+</div>

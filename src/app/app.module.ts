@@ -20,7 +20,10 @@ import { MeSectionComponent } from './pages/me-section/me-section.component';
 import {
   faClock
 } from '@fortawesome/free-regular-svg-icons';
-import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
+import {
+  faEllipsisV
+} from '@fortawesome/free-solid-svg-icons';
+  import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 import { CommunityComponent } from './pages/community/community.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { NavbarComponent } from './component/navbar/navbar.component'
@@ -53,6 +56,6 @@ import { NavbarComponent } from './component/navbar/navbar.component'
 })
 export class AppModule {
   constructor(library: FaIconLibrary){
-    library.addIcons(faClock)
+    library.addIcons(faClock, faEllipsisV)
   }
 }
