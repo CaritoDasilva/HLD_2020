@@ -1,0 +1,32 @@
+.carrusel-container{
+  display: flex;
+  align-content: center;
+  height: 80vh;
+  align-items: center;
+}
+
+.img-carousel{
+  display: block;
+  width: 50vh;
+}
+
+ol.carousel-indicators {
+  top: 92%;
+}
+
+ol.carousel-indicators li{
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background-color: #7BDFF2;
+}
+.carousel-text-wraper{
+  padding: 15px;
+  text-align: center;
+}
+.btn-main{
+  background-color: #7BDFF2 !important;
+  border: none;
+  width: 70%;
+  border-radius: 25px !important;
+}
