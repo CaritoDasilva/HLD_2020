@@ -39,6 +39,40 @@ export class MeSectionComponent implements OnInit {
       'img': '../../assets/meSection/meditacion.png',
       'duration': '5 min'
     }
+  ];
+  communityRecomendationList = [
+    {
+      'id': 1,
+      'title': 'Maternar en cuaretena',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/maternar.png',
+      'duration': ''
+    },
+    {
+      'id': 2,
+      'title': 'Cocina fácil',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/cocina.png',
+      'duration': ''
+    },
+    {
+      'id': 3,
+      'title': 'Manejo de rabietas',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/niños.png' ,
+      'duration': ''
+    },
+    {
+      'id': 4,
+      'title': 'Crisis en la pareja',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/maternar.png',
+      'duration': ''
+    }
   ]
   constructor() { }
 

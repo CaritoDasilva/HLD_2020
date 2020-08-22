@@ -8,18 +8,31 @@
   }
   .card {
     display: inline-block;
+    color: white;
+    border-radius: 12px;
+  }
+  .card-inner-wrapper{
+    height: 100%;
+    width: 100%;
+    background-size: cover !important;
+    border-radius: 12px;
   }
 }
 
 .smallCard{
-  width: 33%;
-  height: 10vh;
-  border-radius: 5px;
+  width: 34%;
+  height: 13vh;
   margin-right: 20px;
+  .card-inner-wrapper{
+    display: inline-flex;
+    align-items: flex-end;
+    padding-left: 6%;
+  }
   .title{
     font-size: 14px;
     text-align: left;
     font-weight: 500;
+    word-break: break-all;
   }
   .duration{
     font-weight: 400;
@@ -28,14 +41,19 @@
 }
 
 .mediumCard{
-  width: 50%;
-  height: 50%;
-  border-radius: 5px;
-  margin-right: 20px;
+  width: 40%;
+  height: 19vh;
+  margin-right: 25px;
+  .card-inner-wrapper{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
   .title{
     font-size: 14px;
     text-align: left;
     font-weight: 700;
+    word-break: break-all;
   }
   .duration{
     font-weight: 400;

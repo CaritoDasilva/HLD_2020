@@ -19,7 +19,11 @@ import { MeSectionComponent } from './pages/me-section/me-section.component';
 // iconos
 import {
   faClock
-} from '@fortawesome/free-regular-svg-icons'
+} from '@fortawesome/free-regular-svg-icons';
+import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
+import { CommunityComponent } from './pages/community/community.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { NavbarComponent } from './component/navbar/navbar.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import {
     RegisterComponent,
     HomeComponent,
     HorizontalScrollComponent,
-    MeSectionComponent
+    MeSectionComponent,
+    TopNavbarComponent,
+    CommunityComponent,
+    ProfileComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
