@@ -32,7 +32,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { CommunityComponent } from './pages/community/community.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { NavbarComponent } from './component/navbar/navbar.component'
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { EventDetailComponent } from './pages/event-detail/event-detail.component';
+import { ActivityDetailComponent } from './pages/activity-detail/activity-detail.component'
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { NavbarComponent } from './component/navbar/navbar.component'
     TopNavbarComponent,
     CommunityComponent,
     ProfileComponent,
-    NavbarComponent
+    NavbarComponent,
+    EventDetailComponent,
+    ActivityDetailComponent
   ],
   imports: [
     BrowserModule,
