@@ -8,19 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class MeSectionComponent implements OnInit {
   exampleList = [
     {
-      'id': 1,
-      'title': 'Meditación',
-      'date': '',
-      'time': '',
-      'img': '../../assets/meSection/meditacion.png',
-      'duration': '5 min'
-    },
-    {
       'id': 2,
       'title': 'Ejercicio de respiración',
       'date': '',
       'time': '',
       'img': '../../assets/meSection/respiracion.png',
+      'duration': '5 min'
+    },
+    {
+      'id': 1,
+      'title': 'Meditación',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/meditacion.png',
       'duration': '5 min'
     },
     {

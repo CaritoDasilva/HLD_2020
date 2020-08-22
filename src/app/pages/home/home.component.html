@@ -1,37 +1,48 @@
 <div class="container">
-    <div class="row justify-content-md-center">
-        <h1>Antes de comenzar cuéntanos:</h1>
-    </div>
-    <div class="row justify-content-md-center">
-        <h4>¿Cómo te sientes hoy?</h4>
+  <div class="w-100 text-center mt-4 pt-4">
+    <img src="../../../assets/onboard/logo-small.png" class="img-logo-small mb-4" alt="...">
+    <h4 class="title mt-2">Antes de comenzar,</h4>
+    <h4 class="title">cuéntanos:</h4>
+  </div>
+    <div class="row justify-content-left pl-4 pt-4">
+        <h4 class="labels">¿Cómo te sientes hoy?</h4>
 
     </div>
-    <div class="row justify-content-md-center mood-container">
+    <div class="row justify-content-center mood-container">
         <mat-slider></mat-slider>
+        <img class="caritas" src="../../../assets/home/caritas.png">
     </div>
-    <div class="row justify-content-md-center">
-        <h4>¿Qué emociones sientes?</h4>
+    <div class="row justify-content-left pl-4">
+        <h4 class="labels">¿Qué emociones sientes?</h4>
 
     </div>
-    <div class="row justify-content-md-center tags-container">
-        <div class="col-md-5 offset-md-1">
+    <div class="mb-4">
+
+      <div class="d-flex justify-content-between tags-container">
             <button class="btn btn-tags">Alegría</button>
             <button class="btn btn-tags">Sorpresa</button>
-            <button class="btn btn-tags">Cansada</button>
-            <button class="btn btn-tags">Enojada</button>
-            <button class="btn btn-tags">Serenidad</button>
-            <button class="btn btn-tags">Ansiedad</button>
-            <button class="btn btn-tags">Esperanza</button>
-            <button class="btn btn-tags">Triste</button>
-
-        </div>
-
+      </div>
+      <div class="d-flex justify-content-between tags-container">
+        <button class="btn btn-tags">Cansada</button>
+        <button class="btn btn-tags">Enojada</button>
+      </div>
+      <div class="d-flex justify-content-between tags-container">
+        <button class="btn btn-tags">Serenidad</button>
+        <button class="btn btn-tags">Ansiedad</button>
+      </div>
+      <div class="d-flex justify-content-between tags-container">
+        <button class="btn btn-tags">Esperanza</button>
+        <button class="btn btn-tags">Triste</button>
+      </div>
     </div>
-    <div class="row justify-content-md-center btns-container">
+
+
+
+    <div class="row justify-content-center btns-container">
         <button class="btn btn-next">Continuar</button>
     </div>
-    <div class="row justify-content-md-center btns-container">
+    <div class="row justify-content-center btns-container">
         <button class="btn btn-link btn-skip">Saltar</button>
     </div>
-    <app-navbar></app-navbar>
+
 </div>

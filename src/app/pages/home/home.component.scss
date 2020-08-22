@@ -1,7 +1,16 @@
-::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
-    background-color: skyblue!important;  /*replace with your color*/
+@import '../../../sass/common';
+
+.title{
+  @include big-title
+}
+.img-logo-small{
+  @include logo-small
 }
 
+.labels{
+  font-size: 18px;
+  text-align: left;
+}
 
 .container {
     .btn {
@@ -12,21 +21,34 @@
     .btns-container {
         .btn-next {
             color: #ffffff;
-            background-color: #7BDFF2;
+            background-color: $main-light-blue;
+            width: 70%;
         }
         .btn-skip {
-            color: #7BDFF2;
+            color: $main-light-blue;
         }
-        
+
     }
     .tags-container {
         padding-left: 3%;
     }
     .btn-tags {
-        border: 1px solid #FF81AE;
+        border: 1px solid $main-dark-pink;
+        width: 50%;
+        color: $main-dark-pink;
+        margin-top: 3%;
     }
     .mat-slider {
-        width: 30%;
+     padding-top: 30px;
+     padding-top: 45px;
+     padding-bottom: 20px;
+      width: 90%;
+
+    }
+
+    .caritas{
+      width: 90%;
+      margin-bottom: 10%;
     }
 
 }

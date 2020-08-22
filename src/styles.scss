@@ -2,3 +2,26 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-accent .mat-slider-track-fill, .mat-accent .mat-slider-thumb, .mat-accent .mat-slider-thumb-label {
+  background-color: #FF81AE;
+}
+.mat-slider-horizontal .mat-slider-track-background {
+  height: 4px !important;
+}
+.mat-slider-horizontal .mat-slider-ticks-container{
+  height: 4px !important;
+}
+.mat-slider-horizontal .mat-slider-track-wrapper{
+  height: 4px !important;
+}
+.mat-slider-thumb {
+  position: absolute;
+  right: -18px !important;
+  bottom: -17px !important;
+  background-color: white !important;
+  box-sizing: border-box;
+  width: 35px !important;
+  height: 35px !important;
+  border: 3px solid #7BDFF2 !important;
+}

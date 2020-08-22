@@ -65,12 +65,7 @@ import { NavbarComponent } from './component/navbar/navbar.component'
 
 })
 export class AppModule {
-<<<<<<< HEAD
-  constructor(library: FaIconLibrary) {
-    library.addIcons(faClock)
-=======
   constructor(library: FaIconLibrary){
     library.addIcons(faClock, faEllipsisV)
->>>>>>> a077c85550084fc1139b85317590d8bcf94e0d23
   }
 }
