@@ -24,7 +24,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 //Angular Material
 import { MatSliderModule } from '@angular/material/slider';
+import { MatCardModule } from '@angular/material/card';
 
+import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
+import { CommunityComponent } from './pages/community/community.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { NavbarComponent } from './component/navbar/navbar.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +39,11 @@ import { MatSliderModule } from '@angular/material/slider';
     RegisterComponent,
     HomeComponent,
     HorizontalScrollComponent,
-    MeSectionComponent
+    MeSectionComponent,
+    TopNavbarComponent,
+    CommunityComponent,
+    ProfileComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +54,8 @@ import { MatSliderModule } from '@angular/material/slider';
     ReactiveFormsModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
