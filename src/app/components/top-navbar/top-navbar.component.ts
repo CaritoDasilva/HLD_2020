@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
-
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from '../../component/dialog/dialog.component'
 @Component({
   selector: 'app-top-navbar',
   templateUrl: './top-navbar.component.html',
@@ -8,7 +9,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class TopNavbarComponent implements OnInit {
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -16,5 +17,10 @@ export class TopNavbarComponent implements OnInit {
   signOut() {
     this.authService.signOut();
   }
+
+  openDialog() {
+    this.dialog.open(DialogComponent);
+  }
+
 
 }
