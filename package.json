@@ -22,11 +22,8 @@
     "@angular/router": "~10.0.11",
     "@popperjs/core": "^2.4.4",
     "bootstrap": "^4.5.2",
-<<<<<<< HEAD
     "firebase": "^7.19.0",
-=======
     "font-awesome": "^4.7.0",
->>>>>>> 345d034fe7e0a34f6cf00fa279d6711d79ef62c9
     "jquery": "^3.5.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
