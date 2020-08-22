@@ -1,23 +1,29 @@
 <div class="container">
-    <div class="row justify-content-md-center form-container">
-        <form>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                </div>
-                <input type="text" class="form-control email" placeholder="Ingresa tu correo" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                </div>
-                <input type="text" class="form-control email" placeholder="Ingresa tu clave" aria-label="Username"
-                    aria-describedby="basic-addon1" required>
-            </div>
-            <div class="next-login-btn-container">
-                <button type="submit" class="btn next-login-btn">Siguiente</button>
-            </div>
-        </form>
-    </div>
+  <div class="w-100 text-center mt-4">
+    <img src="../../../assets/onboard/logo-small.png" class="img-logo-small mb-4" alt="...">
+    <h4 class="title mt-2">¡Bienvenida!</h4>
+    <h4 class="title">Crea tu cuenta</h4>
+  </div>
+  <div class="row justify-content-center form-container">
+    <form>
+      <div class="input-group mb-3">
+        <label>Correo electrónico</label>
+        <input type="text" class="form-control email" placeholder="tunombre@correo.com" aria-label="Username"
+          aria-describedby="basic-addon1" required>
+      </div>
+      <div class="input-group mb-3">
+        <label>Contraseña</label>
+        <input type="text" class="form-control email" placeholder="******" aria-label="Username"
+          aria-describedby="basic-addon1" required>
+      </div>
+      <div class="form-group d-flex justify-content-start mt-4">
+        <input type="checkbox" class="check" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Recuérdame
+        </label>
+      </div>
+      <div class="next-register-btn-container">
+        <button type="submit" class="btn btn-primary btn-lg btn-main">Continuar</button>
+      </div>
+    </form>
+  </div>
 </div>
