@@ -27,6 +27,9 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 
 import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
+import {
+  faEllipsisV
+} from '@fortawesome/free-solid-svg-icons';
 import { CommunityComponent } from './pages/community/community.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { NavbarComponent } from './component/navbar/navbar.component'
@@ -62,7 +65,12 @@ import { NavbarComponent } from './component/navbar/navbar.component'
 
 })
 export class AppModule {
+<<<<<<< HEAD
   constructor(library: FaIconLibrary) {
     library.addIcons(faClock)
+=======
+  constructor(library: FaIconLibrary){
+    library.addIcons(faClock, faEllipsisV)
+>>>>>>> a077c85550084fc1139b85317590d8bcf94e0d23
   }
 }

@@ -36,7 +36,7 @@ export class MeSectionComponent implements OnInit {
       'title': 'Actividad ejemplo',
       'date': '',
       'time': '',
-      'img': '../../assets/meSection/meditacion.png',
+      'img': '../../assets/meSection/niños.png',
       'duration': '5 min'
     }
   ];
@@ -62,7 +62,7 @@ export class MeSectionComponent implements OnInit {
       'title': 'Manejo de rabietas',
       'date': '',
       'time': '',
-      'img': '../../assets/meSection/niños.png' ,
+      'img': '../../assets/meSection/yoga.png' ,
       'duration': ''
     },
     {
@@ -70,10 +70,45 @@ export class MeSectionComponent implements OnInit {
       'title': 'Crisis en la pareja',
       'date': '',
       'time': '',
-      'img': '../../assets/meSection/maternar.png',
+      'img': '../../assets/meSection/legal.png',
       'duration': ''
     }
-  ]
+  ];
+  tipsList = [
+    {
+      'id': 1,
+      'title': 'Maternar en cuaretena',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/terapias.png',
+      'duration': ''
+    },
+    {
+      'id': 2,
+      'title': 'Cocina fácil',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/tareas.png',
+      'duration': ''
+    },
+    {
+      'id': 3,
+      'title': 'Manejo de rabietas',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/bebes.png' ,
+      'duration': ''
+    },
+    {
+      'id': 4,
+      'title': 'Crisis en la pareja',
+      'date': '',
+      'time': '',
+      'img': '../../assets/meSection/niños_actividades.png',
+      'duration': ''
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

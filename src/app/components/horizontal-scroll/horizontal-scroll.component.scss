@@ -20,8 +20,8 @@
 }
 
 .smallCard{
-  width: 34%;
-  height: 13vh;
+  width: 35%;
+  height: 16vh;
   margin-right: 20px;
   .card-inner-wrapper{
     display: inline-flex;
@@ -61,3 +61,8 @@
   }
 }
 
+.largeCard{
+  width: 80%;
+  height: 21vh;
+  margin-right: 25px;
+}
