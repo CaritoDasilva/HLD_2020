@@ -1,10 +1,10 @@
 <div class="container-fluid">
   <app-top-navbar></app-top-navbar>
   <h4 class="me-title">Esperamos que esto pueda ayudarte</h4>
-  <app-horizontal-scroll [list]="exampleList" [cardSize]="'smallCard'"></app-horizontal-scroll>
+  <app-horizontal-scroll [redirect]="redirectName" [list]="exampleList" [cardSize]="'smallCard'"></app-horizontal-scroll>
   <h4 class="me-title">La comunidad recomienda</h4>
-  <app-horizontal-scroll [list]="communityRecomendationList" [cardSize]="'mediumCard'"></app-horizontal-scroll>
+  <app-horizontal-scroll [redirect]="redirectName" [list]="communityRecomendationList" [cardSize]="'mediumCard'"></app-horizontal-scroll>
   <h4 class="me-title">Porque viste tips de planificación</h4>
-  <app-horizontal-scroll [list]="tipsList" [cardSize]="'mediumCard'"></app-horizontal-scroll>
-  <app-navbar></app-navbar>
+  <app-horizontal-scroll [redirect]="redirectName" [list]="tipsList" [cardSize]="'mediumCard'"></app-horizontal-scroll>
 </div>
+<app-navbar></app-navbar>

@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { MeSectionComponent } from './pages/me-section/me-section.component';
 import { CommunityComponent } from './pages/community/community.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ActivityDetailComponent } from './pages/activity-detail/activity-detail.component';
+import { EventDetailComponent } from './pages/event-detail/event-detail.component';
 
 const routes: Routes = [
   { path: '', component: OnboardComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'me', component: MeSectionComponent },
   { path: 'community', component: CommunityComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'activity', component: ActivityDetailComponent },
+  { path: 'event', component: EventDetailComponent },
 ];
 
 @NgModule({

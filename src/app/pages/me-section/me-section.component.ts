@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./me-section.component.scss']
 })
 export class MeSectionComponent implements OnInit {
+  redirectName = 'activity'
   exampleList = [
     {
       'id': 2,
@@ -112,6 +113,7 @@ export class MeSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

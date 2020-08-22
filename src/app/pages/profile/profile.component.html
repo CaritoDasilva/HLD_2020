@@ -1,1 +1,10 @@
-<p>profile works!</p>
+<div class="container-fluid">
+  <app-top-navbar></app-top-navbar>
+  <h4 class="me-title mt-4 pt-4">Tu ánimo semanal</h4>
+  <img class="w-100" src="../../../assets/profile/grafico.png">
+  <h4 class="me-title  mt-4">Emociones registradas</h4>
+  <img class="w-100" src="../../../assets/profile/botones.png">
+  <h4 class="me-title mt-4">Actividades que han mejorado tu ánimo</h4>
+  <app-horizontal-scroll [list]="exmapleList" [cardSize]="'smallCard'"></app-horizontal-scroll>
+</div>
+<app-navbar></app-navbar>

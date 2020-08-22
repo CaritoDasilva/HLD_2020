@@ -1,7 +1,7 @@
 
 <div class="scrolling-wrapper">
     <!-- cards dinamicas -->
-    <div class="card" *ngFor="let item of list" [ngClass]="cardSize">
+    <div class="card" *ngFor="let item of list" [ngClass]="cardSize" (click)="onCardClick()">
       <div class="card-inner-wrapper card-body" [ngStyle]="{background: 'url('+item.img+')'}">
           <!-- <div class="d-block">
             <h2 class="title card-title">
